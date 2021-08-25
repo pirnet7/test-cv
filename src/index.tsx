@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@swisscom/sdx/dist/css/webcomponents.css'
 import { defineCustomElements } from "@swisscom/sdx/dist/js/webcomponents/loader";
 
 ReactDOM.render(
