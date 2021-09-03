@@ -1,39 +1,38 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react';
+import { StrictMode, DetailedHTMLProps, HTMLAttributes } from 'react';
 import ReactDOM from 'react-dom';
+import { defineCustomElements, JSX } from '@swisscom/sdx/dist/js/webcomponents/loader';
+import '@swisscom/sdx/dist/css/webcomponents.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import '@swisscom/sdx/dist/css/webcomponents.css'
-import { defineCustomElements, JSX } from "@swisscom/sdx/dist/js/webcomponents/loader";
 
 // Register the Stencil types
 type StencilProps<T> = {
-    [P in keyof T]?: Omit<T[P], "ref"> | HTMLAttributes<T>;
+  [P in keyof T]?: Omit<T[P], "ref"> | HTMLAttributes<T>;
 };
 
 // Register the React types
 type ReactProps<T> = {
-    [P in keyof T]?: DetailedHTMLProps<HTMLAttributes<T[P]>, T[P]>;
+  [P in keyof T]?: DetailedHTMLProps<HTMLAttributes<T[P]>, T[P]>;
 };
 
 // Combine both types
-type StencilToReact<T = JSX.IntrinsicElements, U = HTMLElementTagNameMap> = StencilProps<T> &
-    ReactProps<U>;
+type StencilToReact<T = JSX.IntrinsicElements, U = HTMLElementTagNameMap> = StencilProps<T> & ReactProps<U>;
 
 // Export the new types as the new JSX namespace.
 // Disable the eslint errors
 declare global {
-    // eslint-disable-next-line @typescript-eslint/no-namespace
-    export namespace JSX {
-        // eslint-disable-next-line @typescript-eslint/no-empty-interface
-        interface IntrinsicElements extends StencilToReact {}
-    }
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  export namespace JSX {
+    // eslint-disable-next-line @typescript-eslint/no-empty-interface
+    interface IntrinsicElements extends StencilToReact {}
+  }
 }
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 );
 
