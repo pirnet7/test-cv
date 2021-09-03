@@ -1,6 +1,5 @@
-import React from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
-import {useEffect, useRef, useState} from "react";
 
 function App() {
   const sdxSelectOptions = ['Option 1', 'Option 2'];
@@ -21,32 +20,41 @@ function App() {
         setSdxSelectValue(value);
       }
     }
-  })
+  });
 
   return (
-      <div className="margin-1" /* margin-1 is a SDX css class */>
-        <h1>SDX React Example</h1>
-        <p>This repo is created by create-react-app. It uses NPM to get SDX and bundles it to your app.</p>
-        <p className="SelectWrapper">
+    <div className="container"> {/* .container is an SDX class */}
+      <h1>SDX React Example</h1>
+
+      <p>This repo is created by create-react-app. It uses NPM to get SDX and bundles it into your app.</p>
+
+      <div className="row">
+        <div className="col-xs col-lg-3">
           <sdx-select
-              ref={sdxSelectRef}
-              placeholder="Please choose a option:"
+            ref={sdxSelectRef}
+            label="What is your choice?"
+            placeholder="Choose your option..."
           >
-            {
-              sdxSelectOptions.map((item) => {
-                return (
-                    <sdx-select-option value={item} key={item}>{item}</sdx-select-option>
-                )
-              })
-            }
+            {sdxSelectOptions.map((item) =>
+              <sdx-select-option value={item} key={item}>{item}</sdx-select-option>
+            )}
           </sdx-select>
-          <span className="margin-1">Selected value: {sdxSelectValue}</span>
-        </p>
-        <sdx-button
+        </div>
+
+        <div className="col-xs col-lg-9">
+          Selected value: {sdxSelectValue}
+        </div>
+      </div>
+
+      <div className="row margin-top-3">
+        <div className="col">
+          <sdx-button
             label="Reset Dropdown"
             onClick={() => setSdxSelectValue([])}
-        />
+          />
+        </div>
       </div>
+    </div>
   );
 }
 
