@@ -6,21 +6,21 @@ function App() {
   const [sdxSelectValue, setSdxSelectValue] = useState<string[]>([]);
   const sdxSelectRef = useRef<HTMLSdxSelectElement>(null);
 
-  useEffect(() => {
-    // The ref might change while it's being processed,
-    // therefore store the reference temporarily
-    const currentRef = sdxSelectRef.current;
+    useEffect(() => {
+        // The ref might change while it's being processed,
+        // therefore store the reference temporarily
+        const currentRef = sdxSelectRef.current;
 
-    if (currentRef) {
-      currentRef.value = sdxSelectValue; // sync state and ref (value can't be bound to sdx-select element)
+        if (currentRef) {
+            currentRef.value = sdxSelectValue; // sync state and ref (value can't be bound to sdx-select element)
+        }
+    });
 
-      // Attach the callback function to the ref
-      currentRef.changeCallback = value => {
-        console.log("sdx-select changeCallback fired");
-        setSdxSelectValue(value);
-      }
-    }
-  });
+  function handleInput(event: React.FormEvent<HTMLSdxSelectElement>) {
+    console.log("sdx-select changeCallback fired");
+    const currentTarget = event.target as HTMLSdxSelectElement
+    setSdxSelectValue(currentTarget.value);
+  }
 
   return (
     <div className="container"> {/* .container is an SDX class */}
@@ -32,6 +32,7 @@ function App() {
         <div className="col-xs col-lg-3">
           <sdx-select
             ref={sdxSelectRef}
+            onInput={handleInput}
             label="What is your choice?"
             placeholder="Choose your option..."
           >
