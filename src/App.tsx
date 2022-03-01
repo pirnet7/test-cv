@@ -17,7 +17,7 @@ function App() {
   });
 
   function handleInput(event: React.FormEvent<HTMLSdxSelectElement>) {
-    console.log("sdx-select changeCallback fired");
+    console.log("sdx-select input event catched");
     const currentTarget = event.target as HTMLSdxSelectElement
     setSdxSelectValue(currentTarget.value);
   }
