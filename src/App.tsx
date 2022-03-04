@@ -12,15 +12,15 @@ function App() {
     const currentRef = sdxSelectRef.current;
 
     if (currentRef) {
-      currentRef.value = sdxSelectValue; // sync state and ref (value can't be bound to sdx-select element)
-
-      // Attach the callback function to the ref
-      currentRef.changeCallback = value => {
-        console.log("sdx-select changeCallback fired");
-        setSdxSelectValue(value);
-      }
+        currentRef.value = sdxSelectValue; // sync state and ref (value can't be bound to sdx-select element)
     }
   });
+
+  function handleInput(event: React.FormEvent<HTMLSdxSelectElement>) {
+    console.log("sdx-select input event catched");
+    const currentTarget = event.target as HTMLSdxSelectElement
+    setSdxSelectValue(currentTarget.value);
+  }
 
   return (
     <div className="container"> {/* .container is an SDX class */}
@@ -32,6 +32,7 @@ function App() {
         <div className="col-xs col-lg-3">
           <sdx-select
             ref={sdxSelectRef}
+            onInput={handleInput}
             label="What is your choice?"
             placeholder="Choose your option..."
           >
