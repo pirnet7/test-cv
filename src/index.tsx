@@ -1,7 +1,7 @@
 import { StrictMode, DetailedHTMLProps, HTMLAttributes } from 'react';
 import ReactDOM from 'react-dom';
 import { defineCustomElements, JSX } from '@swisscom/sdx/dist/js/webcomponents/loader';
-import '@swisscom/sdx/dist/css/webcomponents.css'
+import '@swisscom/sdx/dist/css/sdx.min.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
