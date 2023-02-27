@@ -26,7 +26,7 @@ function App() {
   });
 
   function handleInput(event: React.FormEvent<HTMLSdxSelectElement>) {
-    console.log("sdx-select input event catched");
+    console.log("sdx-select input event caught");
     const currentTarget = event.target as HTMLSdxSelectElement
     setSdxSelectValue(currentTarget.value);
   }
@@ -64,6 +64,7 @@ function App() {
           />
         </div>
       </div>
+
       <div className="row margin-top-3">
         <div className="col">
           <h2>Non-Web-Component Example: Range Slider</h2>
