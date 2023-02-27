@@ -65,11 +65,11 @@ function App() {
         </div>
       </div>
 
-      <div className="row margin-top-3">
+      <div className="row margin-top-4">
         <div className="col">
           <h2>Non-Web-Component Example: Range Slider</h2>
           <div className="range margin-0">
-            <input ref={sdxRangeRef} type="range" min="10" max="1000" value="300" list="speeds"/>
+            <input ref={sdxRangeRef} type="range" min="10" max="1000" defaultValue="300" list="speeds"/>
             <datalist id="speeds">
               <option label="10 Mbits/s">10</option>
               <option label="20 Mbits/s">20</option>
