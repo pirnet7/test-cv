@@ -1,0 +1,8 @@
+.card {
+  max-width: 50rem;
+}
+
+.personalImage {
+  max-width: 170px;
+  border-radius: 5px;
+}

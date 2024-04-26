@@ -1,0 +1,23 @@
+.header-container {
+  padding: 40px 0;
+}
+
+.header {
+  background-image: url("../../assets/headerBackground2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  color: #333;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  color: #666;
+}
