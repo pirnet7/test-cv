@@ -1,9 +1,9 @@
 sdx-header {
-  height: var(--sdx-header-height-mobile-with-breadcrumbs-without-meta);
+  height: var(--sdx-header-height-mobile);
 }
 
 @media (min-width: 1024px) {
   sdx-header {
-    height: var(--sdx-header-height-desktop-with-breadcrumbs-without-meta);
+    height: var(--sdx-header-height-mobile);
   }
 }

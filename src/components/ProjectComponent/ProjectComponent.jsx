@@ -34,20 +34,22 @@ const Project = ({ title, date, skills, development, description }) => {
             sr-hint="Displays the user account"
           ></sdx-icon>
           <p className="mb-0 margin-left-1">
-            <strong>Development:</strong> {skills}
+            <strong>Development:</strong> {development}
           </p>
         </div>
 
-        <div className="d-flex align-items-center margin-bottom-2">
-          <sdx-icon
-            icon-name="icon-edit"
-            size="2"
-            sr-hint="Displays the user account"
-          ></sdx-icon>
-          <p className="mb-0 margin-left-1">
-            <strong>Describtion:</strong> <br />
-            {description}
-          </p>
+        <div>
+          <div className="d-flex align-items-center margin-bottom-2">
+            <sdx-icon
+              icon-name="icon-edit"
+              size="2"
+              sr-hint="Displays the user account"
+            ></sdx-icon>
+            <p className="mb-0 margin-left-1">
+              <strong>Describtion:</strong> <br />
+            </p>
+          </div>
+          <p className="margin-left-4">{description}</p>
         </div>
       </sdx-card>
     </div>

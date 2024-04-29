@@ -1,27 +1,37 @@
+import React from "react";
 import "./FooterComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Footer = () => {
+  const copyToClipboard = () => {
+    const email = "bruno.varrese@swisscom.com";
+    navigator.clipboard.writeText(email);
+
+    document.querySelector("sdx-header").showNotification({
+      description: "Contact Copied To Clipboard!",
+    });
+    this.remove();
+  };
+
   return (
     <div>
-      <footer class="footer footer--compact">
-        <div class="container">
-          <a href="javascript:;" class="logo" tabindex="-1">
-            <span class="logo-lifeform" aria-label="Swisscom Logo"></span>
+      <footer className="footer footer--compact">
+        <div className="container">
+          <a href="javascript:;" className="logo" tabIndex="-1">
+            <span className="logo-lifeform" aria-label="Swisscom Logo"></span>
           </a>
-          <ul class="nav-items">
-            <li class="nav-item">
-              <a href="javascript:;" class="nav-link nav-link--active">
+          <ul className="nav-items">
+            <li className="nav-item">
+              <button className="nav-link" onClick={copyToClipboard}>
                 Contact
-              </a>
+              </button>
             </li>
-            <li class="nav-item">
-              <a href="javascript:;" class="nav-link">
-                Terms of use
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="javascript:;" class="nav-link">
+            <li className="nav-item">
+              <a
+                href="https://forms.office.com/e/nn3WdKBhNL"
+                target="_blank"
+                className="nav-link"
+              >
                 Feedback
               </a>
             </li>

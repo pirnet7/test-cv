@@ -8,7 +8,7 @@ const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const targetTexts = [" Bruno", " a software developer"];
+    const targetTexts = [" Bruno", " a developer"];
 
     const typeText = () => {
       const currentTarget = targetTexts[currentIndex];
@@ -39,13 +39,8 @@ const Header = () => {
     <div className="container header-container">
       <div className="header d-flex flex-column align-items-center justify-content-around">
         <div className="text-center">
-          <h2 className="header-title text-light">Hi there!</h2>
-          <h4 className="header-subtitle text-light">I'm{text}</h4>
-        </div>
-        <div className="mt-4">
-          <sdx-button-group>
-            <sdx-button label="Visit" icon-name="icon-arrow-down"></sdx-button>
-          </sdx-button-group>
+          <h1 className="text-light">CV-Website with SDX</h1>
+          <h2 className="text-light">I'm{text}</h2>
         </div>
         <div className="sideInformationContainer"></div>
       </div>
