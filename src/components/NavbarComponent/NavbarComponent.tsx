@@ -1,15 +1,15 @@
+import React from 'react';
 import "./NavbarComponent.css";
-import { useEffect, useState } from "react";
-
-
 
 const Navbar = () => {
+
+
   return (
     <>
       <sdx-header
         index='{
         "label": "Home",
-        "href": "/"
+        "href": "https://intranet.swisscom.com/home/profile/i:0e.t%7Cazuread%7Ctaavabr1"
       }'
         slots='[
           {
@@ -19,11 +19,16 @@ const Navbar = () => {
             "scrollable": false
           },
         {
-          "label": "LinkedIn",
-          "iconName": "icon-linkedin",
-          "slot": "LinkedIn",
-          "scrollable": true,
-          "href": "https://www.linkedin.com/in/bruno-varrese-70449a25a/"
+          "label": "Download CV",
+          "iconName": "icon-download-cloud",
+          "slot": "Download",
+          "scrollable": true         
+        },
+        {
+          "label": "Language",
+          "iconName": "icon-network",
+          "slot": "language",
+          "scrollable": true
         }
         
       ]'
@@ -31,8 +36,14 @@ const Navbar = () => {
         "tertiary": {
           "children": [
             {
+              "iconName": "icon-folder",
               "label": "Git Repository",
               "href": "https://github.com/pirnet7/pirnet7"
+            },
+            {
+              "iconName": "icon-linkedin",
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/bruno-varrese-70449a25a/"
             }
           ]
         }
@@ -41,6 +52,19 @@ const Navbar = () => {
         <div slot="search">
           <div>
             <sdx-input type="search" placeholder="Search…"></sdx-input>
+          </div>
+        </div>
+
+        <div slot="language" className="container">
+          <div className="row">
+            <div className="col-10 padding-bottom-4">
+              <sdx-select placeholder="Choose your language">
+                <sdx-select-option value="galaxy-s20">German</sdx-select-option>
+                <sdx-select-option value="galaxy-s20-ultra">Italian</sdx-select-option>
+                <sdx-select-option value="google-pixel-6-pro">English</sdx-select-option>
+                <sdx-select-option value="google-pixel-6-pro">French</sdx-select-option>
+              </sdx-select>
+            </div>
           </div>
         </div>
       </sdx-header>

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Project = ({ title, date, skills, development, description }) => {
   return (
-    <div className="mb-4 col-lg-4 col-md-6 col-sm-12">
+    <div className="mb-4 col-lg-4 col-md-6 col-sm-12 sc-navy">
       <sdx-card label={title}>
         <div className="d-flex align-items-center margin-bottom-2">
           <sdx-icon

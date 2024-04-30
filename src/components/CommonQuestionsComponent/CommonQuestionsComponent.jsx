@@ -3,6 +3,8 @@ import "./CommonQuestions.css";
 const CommonQuestions = () => {
   return (
     <div className="container commonQuestions">
+      <h2 className="margin-bottom-3 sc-navy text-center">Common questions</h2>
+
       <div className="row d-flex justify-content-center">
         <div className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
           <sdx-accordion keep-open="false">
@@ -10,7 +12,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-header>
                 <span
                   id="accordion_3"
-                  class="h5 margin-0"
+                  className="h5 margin-0"
                   role="heading"
                   aria-level="2"
                 >
@@ -20,7 +22,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-body>
                 <p
                   aria-labelledby="accordion_3"
-                  class="text-recommended-max-width"
+                  className="text-recommended-max-width"
                   role="region"
                 >
                   Mein erster Tag als Lehrling war aufregend und etwas
@@ -33,7 +35,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-header>
                 <span
                   id="accordion_4"
-                  class="h5 margin-0"
+                  className="h5 margin-0"
                   role="heading"
                   aria-level="2"
                 >
@@ -44,7 +46,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-body>
                 <p
                   aria-labelledby="accordion_4"
-                  class="text-recommended-max-width"
+                  className="text-recommended-max-width"
                   role="region"
                 >
                   Die Aussicht, praktische Fähigkeiten zu erlernen und einen
@@ -58,7 +60,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-header>
                 <span
                   id="accordion_5"
-                  class="h5 margin-0"
+                  className="h5 margin-0"
                   role="heading"
                   aria-level="2"
                 >
@@ -68,7 +70,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-body>
                 <p
                   aria-labelledby="accordion_5"
-                  class="text-recommended-max-width"
+                  className="text-recommended-max-width"
                   role="region"
                 >
                   Während meiner Ausbildung habe ich meine Fähigkeiten in der
@@ -81,7 +83,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-header>
                 <span
                   id="accordion_3"
-                  class="h5 margin-0"
+                  className="h5 margin-0"
                   role="heading"
                   aria-level="2"
                 >
@@ -92,7 +94,7 @@ const CommonQuestions = () => {
               <sdx-accordion-item-body>
                 <p
                   aria-labelledby="accordion_3"
-                  class="text-recommended-max-width"
+                  className="text-recommended-max-width"
                   role="region"
                 >
                   Mein Rat an andere, die eine ähnliche Ausbildung beginnen,

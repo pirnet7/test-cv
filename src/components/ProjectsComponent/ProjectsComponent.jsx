@@ -8,9 +8,11 @@ const Projects = () => {
 
   return (
     <div className="container">
+      <h2 className="margin-bottom-3 sc-navy"> Projects</h2>
+
       <sdx-content-slider xl={xlValue} ul={ulValue} centered-slide="3">
         <Project
-          title="NEXBeginners@DNA/Onboarding "
+          title="DNA@Onboarding "
           date="15.08.22 - 06.11.22"
           skills="HTML, CSS, Git"
           development="Frontend"
@@ -18,7 +20,7 @@ const Projects = () => {
           className="image--frame-light"
         />
         <Project
-          title="Datalake@DNA"
+          title="DNA@Datalake"
           date="07.11.22 - 06.04.23"
           skills="Docker, Ansible, Shell"
           development="Frontend"

@@ -9,7 +9,7 @@ const ToolSkill = () => {
         description="Tools"
         data='[{
     "value": 5,
-    "color": "orchid",
+    "color": "azure",
     "label": "Vue"
   }, {
     "value": 8,

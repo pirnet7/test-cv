@@ -7,6 +7,7 @@ import Footer from "./components/FooterComponent/FooterComponent";
 import Skills from "./components/SkillsComponent/SkillsComponent";
 import CommonQuestions from "./components/CommonQuestionsComponent/CommonQuestionsComponent";
 import Divider from "./components/DividerComponent/DividerComponent";
+import Aboutme from "./components/AboutmeComponent/AboutmeComponent";
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
     <div>
       <Navbar />
       <Header />
+      <Aboutme />
+      <Divider />
       <Skills />
       <Divider />
       <Projects />

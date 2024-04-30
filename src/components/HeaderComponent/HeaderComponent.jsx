@@ -18,7 +18,7 @@ const Header = () => {
         } else {
           setTimeout(() => {
             setForward(false);
-          }, 1000); // Pause at end of typing
+          }, 1000);
         }
       } else {
         if (text !== "") {
@@ -30,19 +30,18 @@ const Header = () => {
       }
     };
 
-    const intervalId = setInterval(typeText, 100); // Adjust typing speed here (milliseconds)
+    const intervalId = setInterval(typeText, 100);
 
     return () => clearInterval(intervalId);
   }, [text, forward, currentIndex]);
 
   return (
     <div className="container header-container">
-      <div className="header d-flex flex-column align-items-center justify-content-around">
+      <div className="header d-flex flex-column align-items-center justify-content-around margin-bottom-2">
         <div className="text-center">
           <h1 className="text-light">CV-Website with SDX</h1>
           <h2 className="text-light">I'm{text}</h2>
         </div>
-        <div className="sideInformationContainer"></div>
       </div>
     </div>
   );

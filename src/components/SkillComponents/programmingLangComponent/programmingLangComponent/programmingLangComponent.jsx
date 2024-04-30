@@ -16,12 +16,8 @@ const ProgrammingLangSkill = () => {
     "color": "turquoise",
     "label": "Java"
   }, {
-    "value": 5,
-    "color": "iris",
-    "label": "Python"
-  }, {
     "value": 4,
-    "color": "orchid",
+    "color": "iris",
     "label": "Typescript"
   },  {
     "value": 7,
