@@ -1,28 +1,33 @@
-import React from 'react';
+import { useEffect } from "react";
 import "./NavbarComponent.css";
+import { useTranslation } from 'react-i18next';
+import PDFGenerator from "../PDFGeneratorComponent/PDFGeneratorComponent";
+
+const locales = {
+  en: { title: 'English' },
+  de: { title: 'Deutsch' },
+  it: { title: 'Italienisch' },
+  fr: { title: 'Français' }
+};
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
 
 
   return (
     <>
       <sdx-header
-        index='{
-        "label": "Home",
-        "href": "https://intranet.swisscom.com/home/profile/i:0e.t%7Cazuread%7Ctaavabr1"
-      }'
+        index={{
+          label: "Home",
+          href: "https://intranet.swisscom.com/home/profile/i:0e.t%7Cazuread%7Ctaavabr1"
+        }}
         slots='[
-          {
-            "label": "Search",
-            "iconName": "icon-search",
-            "slot": "search",
-            "scrollable": false
-          },
         {
           "label": "Download CV",
           "iconName": "icon-download-cloud",
-          "slot": "Download",
-          "scrollable": true         
+          "slot": "download",
+          "scrollable": true,
+          "href": "javascript:;"      
         },
         {
           "label": "Language",
@@ -49,26 +54,33 @@ const Navbar = () => {
         }
       }'
       >
-        <div slot="search">
-          <div>
-            <sdx-input type="search" placeholder="Search…"></sdx-input>
+        <div slot="download">
+          <div className="d-flex align-items-center">
+            <div className="downloadLink">
+              <PDFGenerator />
+            </div>
           </div>
         </div>
 
         <div slot="language" className="container">
           <div className="row">
             <div className="col-10 padding-bottom-4">
-              <sdx-select placeholder="Choose your language">
-                <sdx-select-option value="galaxy-s20">German</sdx-select-option>
-                <sdx-select-option value="galaxy-s20-ultra">Italian</sdx-select-option>
-                <sdx-select-option value="google-pixel-6-pro">English</sdx-select-option>
-                <sdx-select-option value="google-pixel-6-pro">French</sdx-select-option>
-              </sdx-select>
+              <sdx-input-group placeholder="Choose your language">
+                {Object.keys(locales).map((locale) => (
+                  <div className="row">
+                    <div className="col m-2">
+                      <sdx-input-item key={locale} onClick={() => i18n.changeLanguage(locale)}>
+                        {locales[locale as keyof typeof locales].title}
+                      </sdx-input-item>
+                    </div>
+                  </div>
+                ))}
+
+              </sdx-input-group>
             </div>
           </div>
         </div>
       </sdx-header>
-
     </>
   );
 };

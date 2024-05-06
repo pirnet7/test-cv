@@ -1,14 +1,17 @@
 import "./ProjectsComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Project from "../ProjectComponent/ProjectComponent";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   const xlValue = 3;
   const ulValue = 3;
 
   return (
     <div className="container">
-      <h2 className="margin-bottom-3 sc-navy"> Projects</h2>
+      <h2 className="margin-bottom-3 sc-navy">{t("projects.title")}</h2>
 
       <sdx-content-slider xl={xlValue} ul={ulValue} centered-slide="3">
         <Project
@@ -16,7 +19,7 @@ const Projects = () => {
           date="15.08.22 - 06.11.22"
           skills="HTML, CSS, Git"
           development="Frontend"
-          description="During a three-month onboarding programme, you will acquire important skills for working on various projects in different teams at Swisscom."
+          description={`${t("projects.onboardingProject")}`}
           className="image--frame-light"
         />
         <Project
@@ -24,7 +27,7 @@ const Projects = () => {
           date="07.11.22 - 06.04.23"
           skills="Docker, Ansible, Shell"
           development="Frontend"
-          description="Learn about big data platforms (Hadoop, Kubernetes) and deploy container images. Apply your knowledge by improving Spark images and automating CI/CD."
+          description={`${t("projects.datalakeProject")}`}
           className="image--frame-light"
         />
 
@@ -33,7 +36,7 @@ const Projects = () => {
           date="11.04.23 - 29.02.24"
           skills="SDX, Vue-JS"
           development="Frontend"
-          description="NexCC, the competence centre within NEX, develops and maintains important applications for the entire company and offers comprehensive software and hardware support."
+          description={`${t("projects.nexCCProject")}`}
           className="image--frame-light"
         />
 
@@ -42,7 +45,7 @@ const Projects = () => {
           date="12.02.24 - 02.08.24"
           skills="React, TypeScript"
           development="Frontend"
-          description="We are a young team that is passionate about the design and development of high-quality web applications."
+          description={`${t("projects.appsTeamProject")}`}
           className="image--frame-light"
         />
       </sdx-content-slider>

@@ -1,12 +1,15 @@
 import "./toolsComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 
 const ToolSkill = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <sdx-pie-chart
         value="Dev"
-        description="Tools"
+        description={t("skills.skillTools")}
         data='[{
     "value": 5,
     "color": "azure",

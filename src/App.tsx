@@ -1,4 +1,5 @@
 import "./App.css";
+import { Suspense } from 'react';
 
 import Navbar from "./components/NavbarComponent/NavbarComponent";
 import Header from "./components/HeaderComponent/HeaderComponent";
@@ -8,6 +9,7 @@ import Skills from "./components/SkillsComponent/SkillsComponent";
 import CommonQuestions from "./components/CommonQuestionsComponent/CommonQuestionsComponent";
 import Divider from "./components/DividerComponent/DividerComponent";
 import Aboutme from "./components/AboutmeComponent/AboutmeComponent";
+import PDFGenerator from "./components/PDFGeneratorComponent/PDFGeneratorComponent";
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <div>
       <Navbar />
       <Header />
+      <Divider />
       <Aboutme />
       <Divider />
       <Skills />
@@ -27,4 +30,10 @@ function App() {
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="...loading">
+      <App />
+    </Suspense>
+  )
+}

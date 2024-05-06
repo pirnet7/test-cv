@@ -1,0 +1,64 @@
+{
+  "main": {
+    "title": "Sito CV con SDX",
+    "subTitle": {
+      "iam": "Sono",
+      "profession": " uno sviluppatore"
+    }
+  },
+  "aboutme": {
+    "title": "Su di me",
+    "langGerman": "Tedesco",
+    "langItalian": "Italiano",
+    "langEnglish": "Inglese",
+    "langFrench": "Francese",
+    "cardTitle": "Mi chiamo Bruno",
+    "cardYears": "17 anni",
+    "cardResidence": "Da Zurigo",
+    "cardHobbys": "I miei hobby:",
+    "cardCampingTitle": "Campeggio",
+    "cardCampingDescription": "In mezzo alla natura, sotto il cielo stellato.",
+    "cardSportsTitle": "Sport",
+    "cardSportsDescription": "Sport intensi, spirito di squadra e pura adrenalina.",
+    "cardFishingTitle": "Pesca",
+    "cardFishingDescription": "Pace vicino all'acqua quando i pesci mordono."
+  },
+  "skills": {
+    "title": "Competenze",
+    "skillLanguages": "Lingue",
+    "skillTools": "Strumenti"
+  },
+  "projects": {
+    "title": "Progetti Visitati",
+    "date": "Data",
+    "skills": "Competenze",
+    "developement": "Sviluppo",
+    "description": "Descrizione",
+    "onboardingProject": "Durante un programma di inserimento di tre mesi, acquisirai competenze importanti per lavorare su vari progetti in team diversi presso Swisscom.",
+    "datalakeProject": "Scopri le piattaforme big data (Hadoop, Kubernetes) e distribuisci immagini container. Applica le tue conoscenze migliorando le immagini di Spark e automatizzando CI/CD.",
+    "nexCCProject": "NexCC, il centro di competenza all'interno di NEX, sviluppa e mantiene applicazioni chiave per l'intera azienda e fornisce supporto completo software e hardware.",
+    "appsTeamProject": "Siamo un team giovane appassionato di progettazione e sviluppo di applicazioni web di alta qualità."
+  },
+  "commonquestions": {
+    "title": "Domande Comuni",
+    "question1": {
+      "question": "Come è stato il tuo primo giorno da apprendista?",
+      "answer": "Il mio primo giorno da apprendista è stato emozionante e un po' travolgente, ma ero anche curioso e pronto a imparare tutto ciò che veniva verso di me."
+    },
+    "question2": {
+      "question": "Cosa ti ha ispirato a scegliere questo apprendistato?",
+      "answer": "La prospettiva di imparare competenze pratiche e dare un contributo diretto a un settore che mi ha sempre interessato mi ha ispirato a scegliere questo apprendistato."
+    },
+    "question3": {
+      "question": "Come sei evoluto durante l'apprendistato?",
+      "answer": "Durante il mio apprendistato, ho notevolmente migliorato le mie competenze nel lavoro di squadra e nella risoluzione dei problemi, il che mi ha aiutato a diventare più sicuro professionalmente."
+    },
+    "question4": {
+      "question": "Che consiglio daresti agli altri che iniziano un apprendistato simile?",
+      "answer": "Il mio consiglio per gli altri che iniziano un apprendistato simile sarebbe di essere aperti a nuove esperienze e cercare attivamente opportunità di crescita personale e professionale."
+    }
+  },
+  "footer": {
+    "contact": "Contatto"
+  }
+}

@@ -1,9 +1,14 @@
 import "./CommonQuestions.css";
+import { useTranslation } from "react-i18next";
 
 const CommonQuestions = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container commonQuestions">
-      <h2 className="margin-bottom-3 sc-navy text-center">Common questions</h2>
+      <h2 className="margin-bottom-3 sc-navy text-center">
+        {t("commonquestions.title")}
+      </h2>
 
       <div className="row d-flex justify-content-center">
         <div className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
@@ -16,7 +21,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  Wie war dein erster Tag als Lehrling?
+                  {t("commonquestions.question1.question")}
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -25,9 +30,7 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  Mein erster Tag als Lehrling war aufregend und etwas
-                  überwältigend zugleich, aber ich war auch neugierig und
-                  bereit, alles zu lernen, was auf mich zukam.
+                  {t("commonquestions.question1.answer")}
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>
@@ -39,8 +42,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  Was hat dich dazu inspiriert, dich für diese Ausbildung zu
-                  entscheiden?
+                  {t("commonquestions.question2.question")}
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -49,10 +51,7 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  Die Aussicht, praktische Fähigkeiten zu erlernen und einen
-                  direkten Beitrag zu einem Bereich zu leisten, der mich schon
-                  immer interessiert hat, hat mich dazu inspiriert, diese
-                  Ausbildung zu wählen.
+                  {t("commonquestions.question2.answer")}
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>
@@ -64,7 +63,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  Wie hast du dich während der Ausbildung weiterentwickelt?
+                  {t("commonquestions.question3.question")}
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -73,9 +72,7 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  Während meiner Ausbildung habe ich meine Fähigkeiten in der
-                  Teamarbeit und Problemlösung stark verbessert, was mir
-                  geholfen hat, beruflich selbstbewusster zu werden.
+                  {t("commonquestions.question3.answer")}
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>
@@ -87,8 +84,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  Welchen Rat würdest du anderen geben, die eine ähnliche
-                  Ausbildung beginnen?
+                  {t("commonquestions.question4.question")}
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -97,10 +93,7 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  Mein Rat an andere, die eine ähnliche Ausbildung beginnen,
-                  wäre, offen für neue Erfahrungen zu sein und aktiv nach
-                  Möglichkeiten zu suchen, sich persönlich und beruflich
-                  weiterzuentwickeln.
+                  {t("commonquestions.question4.answer")}
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>

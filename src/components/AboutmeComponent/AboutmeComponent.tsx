@@ -7,7 +7,13 @@ import camping from '../../assets/CampingHobby.jpg';
 import sports from '../../assets/SportsHobby.jpg';
 import fishing from '../../assets/FishingHobby.jpg';
 
+import { useTranslation } from 'react-i18next';
+
+
+
 const Aboutme = () => {
+  const { t } = useTranslation();
+
   const germanRef = useRef<HTMLDivElement>({} as HTMLDivElement);
   const italianRef = useRef<HTMLDivElement>({} as HTMLDivElement);
   const englischRef = useRef<HTMLDivElement>({} as HTMLDivElement);
@@ -17,13 +23,13 @@ const Aboutme = () => {
 
   return (
     <div className="container ">
-      <h2 className="margin-bottom-2 sc-navy">About me</h2>
+      <h2 className="margin-bottom-2 sc-navy">{t("aboutme.title")}</h2>
       <div className="row">
         <div className="col-sm-12 col-md-8 col-lg-8 d-flex justify-content-between flex-column margin-bottom-2 margin-top-2">
-          <LanguageChart color="iris" length={90} language={"German"} chartRef={germanRef} />
-          <LanguageChart color="iris" length={95} language={"Italian"} chartRef={italianRef} />
-          <LanguageChart color="iris" length={70} language={"English"} chartRef={englischRef} />
-          <LanguageChart color="iris" length={60} language={"French"} chartRef={frenchRef} />
+          <LanguageChart length={90} language={`${t("aboutme.langGerman")}`} chartRef={germanRef} />
+          <LanguageChart length={95} language={`${t("aboutme.langItalian")}`} chartRef={italianRef} />
+          <LanguageChart length={70} language={`${t("aboutme.langEnglish")}`} chartRef={englischRef} />
+          <LanguageChart length={60} language={`${t("aboutme.langFrench")}`} chartRef={frenchRef} />
         </div>
 
         <div className="col-sm-12 col-md-4 col-lg-4 margin-bottom-2 margin-top-2 sc-navy">
@@ -31,49 +37,46 @@ const Aboutme = () => {
             <div className="d-flex align-items-center margin-bottom-2">
 
               <h2 className="mb-2">
-                My name is Bruno
+                {t("aboutme.cardTitle")}
               </h2>
             </div>
-
             <div className="d-flex align-items-center margin-bottom-2">
               <sdx-icon
                 icon-name="icon-cake"
                 size={2}
-                sr-hint="Displays the user account"
               ></sdx-icon>
               <p className="mb-0 margin-left-1">
-                17 years old
+                {t("aboutme.cardYears")}
               </p>
             </div>
             <div className="d-flex align-items-center margin-bottom-2">
               <sdx-icon
                 icon-name="icon-map-pointer"
                 size={2}
-                sr-hint="Displays the user account"
               ></sdx-icon>
               <p className="mb-0 margin-left-1">
-                from Zurich
+                {t("aboutme.cardResidence")}
               </p>
             </div>
             <div className="d-flex align-items-center margin-bottom-2">
               <sdx-icon
                 icon-name="icon-robot-happy"
                 size={2}
-                sr-hint="Displays the user account"
               ></sdx-icon>
               <p className="mb-0 margin-left-1">
-                My hobbys:
+                {t("aboutme.cardHobbys")}
+
               </p>
             </div>
             <sdx-content-slider lg={1} xl={1} ul={1} sr-hint="My three slides">
 
-              <Hobby img={camping} imgAlt={"Image of camping hobby"} title={"Camping"} description={"Immersed in nature, outdoors under the starry sky."} />
+              <Hobby img={camping} imgAlt={"Image of camping hobby"} title={`${t("aboutme.cardCampingTitle")}`} description={`${t("aboutme.cardCampingDescription")}`} />
 
 
-              <Hobby img={sports} imgAlt={"Image of sports hobby"} title={"Sports"} description={"Intense sport, team spirit, and pure adrenaline."} />
+              <Hobby img={sports} imgAlt={"Image of sports hobby"} title={`${t("aboutme.cardSportsTitle")}`} description={`${t("aboutme.cardSportsDescription")}`} />
 
 
-              <Hobby img={fishing} imgAlt={"Image of fishing hobby"} title={"Fishing"} description={"Tranquility by the water, as the fish bite."} />
+              <Hobby img={fishing} imgAlt={"Image of fishing hobby"} title={`${t("aboutme.cardFishingTitle")}`} description={`${t("aboutme.cardFishingDescription")}`} />
 
             </sdx-content-slider>
           </sdx-card>

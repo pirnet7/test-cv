@@ -1,0 +1,3 @@
+[submodule "sdx-react-example"]
+    path = sdx-react-example
+    url = https://github.com/pirnet7/cv-website

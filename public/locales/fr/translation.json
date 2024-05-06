@@ -1,0 +1,64 @@
+{
+  "main": {
+    "title": "Site CV avec SDX",
+    "subTitle": {
+      "iam": "Je suis",
+      "profession": " un développeur"
+    }
+  },
+  "aboutme": {
+    "title": "À propos de moi",
+    "langGerman": "Allemand",
+    "langItalian": "Italien",
+    "langEnglish": "Anglais",
+    "langFrench": "Français",
+    "cardTitle": "Je m'appelle Bruno",
+    "cardYears": "17 ans",
+    "cardResidence": "De Zurich",
+    "cardHobbys": "Mes passe-temps :",
+    "cardCampingTitle": "Camping",
+    "cardCampingDescription": "Au milieu de la nature, sous un ciel étoilé.",
+    "cardSportsTitle": "Sports",
+    "cardSportsDescription": "Sports intenses, esprit d'équipe et adrénaline pure.",
+    "cardFishingTitle": "Pêche",
+    "cardFishingDescription": "Paix au bord de l'eau lorsque les poissons mordent."
+  },
+  "skills": {
+    "title": "Compétences",
+    "skillLanguages": "Langues",
+    "skillTools": "Outils"
+  },
+  "projects": {
+    "title": "Projets Visités",
+    "date": "Date",
+    "skills": "Compétences",
+    "developement": "Développement",
+    "description": "Description",
+    "onboardingProject": "Pendant un programme d'intégration de trois mois, vous acquerrez des compétences importantes pour travailler sur divers projets au sein d'équipes différentes chez Swisscom.",
+    "datalakeProject": "Découvrez les plateformes de big data (Hadoop, Kubernetes) et déployez des images de conteneur. Appliquez vos connaissances en améliorant les images Spark et en automatisant CI/CD.",
+    "nexCCProject": "NexCC, le centre de compétence au sein de NEX, développe et maintient des applications clés pour l'ensemble de l'entreprise et fournit un support logiciel et matériel complet.",
+    "appsTeamProject": "Nous sommes une jeune équipe passionnée par la conception et le développement d'applications web de haute qualité."
+  },
+  "commonquestions": {
+    "title": "Questions Courantes",
+    "question1": {
+      "question": "Comment était votre premier jour en tant qu'apprenti ?",
+      "answer": "Mon premier jour en tant qu'apprenti était excitant et un peu intimidant, mais j'étais aussi curieux et prêt à apprendre tout ce qui venait à moi."
+    },
+    "question2": {
+      "question": "Qu'est-ce qui vous a inspiré à choisir cet apprentissage ?",
+      "answer": "La perspective d'apprendre des compétences pratiques et de contribuer directement à un domaine qui m'a toujours intéressé m'a inspiré à choisir cet apprentissage."
+    },
+    "question3": {
+      "question": "Comment avez-vous évolué pendant l'apprentissage ?",
+      "answer": "Pendant mon apprentissage, j'ai considérablement amélioré mes compétences en travail d'équipe et en résolution de problèmes, ce qui m'a aidé à devenir plus confiant professionnellement."
+    },
+    "question4": {
+      "question": "Quels conseils donneriez-vous à ceux qui commencent un apprentissage similaire ?",
+      "answer": "Mon conseil à ceux qui commencent un apprentissage similaire serait d'être ouverts à de nouvelles expériences et de rechercher activement des opportunités de croissance personnelle et professionnelle."
+    }
+  },
+  "footer": {
+    "contact": "Contact"
+  }
+}

@@ -3,7 +3,7 @@ import "./LanguageChartComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BarChartHorizontal } from "@swisscom/sdx";
 
-const LanguageChart = ({ color, length, language, chartRef }: { color: string; length: number; language: string; chartRef: React.RefObject<HTMLDivElement>; }) => {
+const LanguageChart = ({ length, language, chartRef }: { length: number; language: string; chartRef: React.RefObject<HTMLDivElement>; }) => {
   const [germanBarChart, setGermanBarChart] = useState<BarChartHorizontal>();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const LanguageChart = ({ color, length, language, chartRef }: { color: string; l
           data-unit="%"
         >
           <div className="js-data-list">
-            <div className="js-data" data-value={length} data-color={color}>
+            <div className="js-data" data-value={length} data-color="iris">
               {language}
             </div>
           </div>

@@ -7,3 +7,8 @@ sdx-header {
     height: var(--sdx-header-height-mobile);
   }
 }
+
+.downloadLink {
+  padding: 0px 16px 16px;
+  cursor: pointer;
+}

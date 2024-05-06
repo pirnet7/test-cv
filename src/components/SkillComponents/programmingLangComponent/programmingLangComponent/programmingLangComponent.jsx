@@ -1,12 +1,15 @@
 import "./programmingLangComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 
 const ProgrammingLangSkill = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <sdx-pie-chart
         value="Dev"
-        description="Languages"
+        description={t("skills.skillLanguages")}
         data='[{
     "value": 7,
     "color": "azure",

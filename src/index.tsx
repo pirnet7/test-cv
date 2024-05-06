@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { defineCustomElements, JSX } from '@swisscom/sdx/dist/js/webcomponents/loader';
 import '@swisscom/sdx/dist/css/sdx.min.css'
 import './index.css';
+import './i18n';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 // Register the Stencil types
 type StencilProps<T> = {
@@ -25,9 +25,10 @@ declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   export namespace JSX {
     // eslint-disable-next-line @typescript-eslint/no-empty-interface
-    interface IntrinsicElements extends StencilToReact {}
+    interface IntrinsicElements extends StencilToReact { }
   }
 }
+
 
 ReactDOM.render(
   <StrictMode>
@@ -35,10 +36,5 @@ ReactDOM.render(
   </StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
 
 defineCustomElements();

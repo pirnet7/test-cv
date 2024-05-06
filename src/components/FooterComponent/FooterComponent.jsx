@@ -1,8 +1,11 @@
 import React from "react";
 import "./FooterComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const copyToClipboard = () => {
     const email = "bruno.varrese@swisscom.com";
     navigator.clipboard.writeText(email);
@@ -23,7 +26,7 @@ const Footer = () => {
           <ul className="nav-items">
             <li className="nav-item">
               <button className="nav-link" onClick={copyToClipboard}>
-                Contact
+                {t("footer.contact")}
               </button>
             </li>
             <li className="nav-item">

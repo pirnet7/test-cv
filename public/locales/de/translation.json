@@ -1,0 +1,64 @@
+{
+  "main": {
+    "title": "CV-Website mit SDX",
+    "subTitle": {
+      "iam": "Ich bin",
+      "profession": " ein Entwickler"
+    }
+  },
+  "aboutme": {
+    "title": "Über mich",
+    "langGerman": "Deutsch",
+    "langItalian": "Italienisch",
+    "langEnglish": "Englisch",
+    "langFrench": "Französisch",
+    "cardTitle": "Mein Name ist Bruno",
+    "cardYears": "17 Jahre alt",
+    "cardResidence": "Aus Zürich",
+    "cardHobbys": "Meine Hobbys:",
+    "cardCampingTitle": "Camping",
+    "cardCampingDescription": "Mitten in der Natur, unter dem Sternenhimmel.",
+    "cardSportsTitle": "Sport",
+    "cardSportsDescription": "Intensiver Sport, Teamgeist und Adrenalin pur.",
+    "cardFishingTitle": "Fischen",
+    "cardFishingDescription": "Ruhe am Wasser, wenn die Fische anbeißen."
+  },
+  "skills": {
+    "title": "Kompetenzen",
+    "skillLanguages": "Sprachen",
+    "skillTools": "Werkzeuge"
+  },
+  "projects": {
+    "title": "Besuchte Projekte",
+    "date": "Datum",
+    "skills": "Kompetenzen",
+    "developement": "Entwicklung",
+    "description": "Beschreibung",
+    "onboardingProject": "Während eines dreimonatigen Onboarding-Programms erwerben Sie wichtige Fähigkeiten für die Arbeit an verschiedenen Projekten in unterschiedlichen Teams bei Swisscom.",
+    "datalakeProject": "Lernen Sie Big-Data-Plattformen (Hadoop, Kubernetes) kennen und stellen Sie Container-Images bereit. Wenden Sie Ihr Wissen an, indem Sie Spark-Images verbessern und CI/CD automatisieren.",
+    "nexCCProject": "NexCC, das Kompetenzzentrum innerhalb von NEX, entwickelt und pflegt wichtige Anwendungen für das gesamte Unternehmen und bietet umfassenden Soft- und Hardware-Support.",
+    "appsTeamProject": "Wir sind ein junges Team, das sich leidenschaftlich mit dem Design und der Entwicklung von hochwertigen Webanwendungen beschäftigt."
+  },
+  "commonquestions": {
+    "title": "Allgemeine Fragen",
+    "question1": {
+      "question": "Wie war dein erster Tag als Lehrling?",
+      "answer": "Mein erster Tag als Lehrling war aufregend und etwas überwältigend zugleich, aber ich war auch neugierig und bereit, alles zu lernen, was auf mich zukam."
+    },
+    "question2": {
+      "question": "Was hat dich dazu inspiriert, dich für diese Ausbildung zu entscheiden?",
+      "answer": "Die Aussicht, praktische Fähigkeiten zu erlernen und einen direkten Beitrag zu einem Bereich zu leisten, der mich schon immer interessiert hat, hat mich dazu inspiriert, diese Ausbildung zu wählen."
+    },
+    "question3": {
+      "question": "Wie hast du dich während der Ausbildung weiterentwickelt?",
+      "answer": "Während meiner Ausbildung habe ich meine Fähigkeiten in der Teamarbeit und Problemlösung stark verbessert, was mir geholfen hat, beruflich selbstbewusster zu werden."
+    },
+    "question4": {
+      "question": "Welchen Rat würdest du anderen geben, die eine ähnliche Ausbildung beginnen?",
+      "answer": "Mein Rat an andere, die eine ähnliche Ausbildung beginnen, wäre, offen für neue Erfahrungen zu sein und aktiv nach Möglichkeiten zu suchen, sich persönlich und beruflich weiterzuentwickeln."
+    }
+  },
+  "footer": {
+    "contact": "Kontakt"
+  }
+}

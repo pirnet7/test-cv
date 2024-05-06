@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import "./ProjectComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,7 +13,7 @@ const Project = ({ title, date, skills, development, description }) => {
             sr-hint="Displays the user account"
           ></sdx-icon>
           <p className="mb-0 margin-left-1">
-            <strong>Date:</strong> {date}
+            <strong>{t("projects.date")}:</strong> {date}
           </p>
         </div>
 
@@ -23,7 +24,7 @@ const Project = ({ title, date, skills, development, description }) => {
             sr-hint="Displays the user account"
           ></sdx-icon>
           <p className="mb-0 margin-left-1">
-            <strong>Skills:</strong> {skills}
+            <strong>{t("projects.skills")}:</strong> {skills}
           </p>
         </div>
 
@@ -34,7 +35,7 @@ const Project = ({ title, date, skills, development, description }) => {
             sr-hint="Displays the user account"
           ></sdx-icon>
           <p className="mb-0 margin-left-1">
-            <strong>Development:</strong> {development}
+            <strong>{t("projects.developement")}:</strong> {development}
           </p>
         </div>
 
@@ -46,7 +47,7 @@ const Project = ({ title, date, skills, development, description }) => {
               sr-hint="Displays the user account"
             ></sdx-icon>
             <p className="mb-0 margin-left-1">
-              <strong>Describtion:</strong> <br />
+              <strong>{t("projects.description")}:</strong> <br />
             </p>
           </div>
           <p className="margin-left-4">{description}</p>
