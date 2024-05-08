@@ -15,7 +15,7 @@ const Skills = () => {
         <div className="col-sm-12 col-md-6 col-xl-5">
           <div
             id="programmingLangTable"
-            className="table table--responsive table--border"
+            className="table table--responsive table-border"
           >
             <div className="table__wrapper">
               <table className="table">

@@ -25,7 +25,11 @@ const Aboutme = () => {
       <div className="row">
         <div className="col-sm-12 col-md-7 col-lg-8 d-flex justify-content-between flex-column margin-bottom-2 margin-top-2">
 
-          <LanguageChart length={50} language={"Deutsch"} color={"iris"} chartRef={germanRef} />
+          <LanguageChart length={60} language={`${t("aboutme.langGerman")}`} chartRef={germanRef} />
+          <LanguageChart length={50} language={`${t("aboutme.langItalian")}`} chartRef={italianRef} />
+          <LanguageChart length={50} language={`${t("aboutme.langEnglish")}`} chartRef={englischRef} />
+          <LanguageChart length={50} language={`${t("aboutme.langFrench")}`} chartRef={frenchRef} />
+
         </div>
 
         <div className="col-sm-12 col-md-4 col-lg-4 margin-bottom-2 margin-top-2 sc-navy">
