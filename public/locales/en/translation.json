@@ -8,10 +8,22 @@
   },
   "aboutme": {
     "title": "About Me",
-    "langGerman": "German",
-    "langItalian": "Italian",
-    "langEnglish": "English",
-    "langFrench": "French",
+    "langGerman": {
+      "title": "German",
+      "description": "German is my mother tongue. It has accompanied me throughout my life since birth and is an integral part of my everyday life."
+    },
+    "langItalian": {
+      "title": "Italian",
+      "description": "I have been speaking Italian since birth. This language is my mother tongue, learned from my parents."
+    },
+    "langEnglish": {
+      "title": "English",
+      "description": "Although I have been speaking English since the third grade, I would like to master it better. While it is a solid part of my everyday life, I am working on deepening my skills."
+    },
+    "langFrench": {
+      "title": "French",
+      "description": "I have been speaking French since the fourth grade, which is about five years now. I learned the language in school."
+    },
     "languageKnowledge": {
       "native": "Native language",
       "fluent": "Fluent",

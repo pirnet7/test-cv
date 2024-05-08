@@ -8,10 +8,22 @@
   },
   "aboutme": {
     "title": "Über mich",
-    "langGerman": "Deutsch",
-    "langItalian": "Italienisch",
-    "langEnglish": "Englisch",
-    "langFrench": "Französisch",
+    "langGerman": {
+      "title": "Deutsch",
+      "description": "Deutsch ist meine Muttersprache. Seit meiner Geburt begleitet sie mich durch mein Leben und ist ein fester Bestandteil meines Alltags."
+    },
+    "langItalian": {
+      "title": "Italienisch",
+      "description": "Ich spreche Italienisch seit meiner Geburt. Diese Sprache ist meine Muttersprache und habe sie von meinen Eltern gelernt."
+    },
+    "langEnglish": {
+      "title": "Englisch",
+      "description": "Obwohl ich Englisch seit der dritten Klasse spreche, würde ich es gerne besser beherrschen. Es ist zwar ein fester Bestandteil meines Alltags, doch ich arbeite daran, meine Fähigkeiten zu vertiefen."
+    },
+    "langFrench": {
+      "title": "Französisch",
+      "description": "Seit der vierten Klasse spreche ich Französisch, das sind nun etwa fünf Jahre. Ich habe die Sprache in der Schule gelernt."
+    },
     "languageKnowledge": {
       "native": "Muttersprache",
       "fluent": "Fliessend",

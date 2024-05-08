@@ -1,7 +1,5 @@
 import { StrictMode, DetailedHTMLProps, HTMLAttributes } from 'react';
 import ReactDOM from 'react-dom';
-import { defineCustomElements, JSX } from '@swisscom/sdx/dist/js/webcomponents/loader';
-import '@swisscom/sdx/dist/css/sdx.min.css'
 import './index.css';
 import './i18n';
 import App from './App';
@@ -25,7 +23,9 @@ declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   export namespace JSX {
     // eslint-disable-next-line @typescript-eslint/no-empty-interface
-    interface IntrinsicElements extends StencilToReact { }
+    interface IntrinsicElements {
+      [key: string]: any;
+    }
   }
 }
 
@@ -36,5 +36,3 @@ ReactDOM.render(
   </StrictMode>,
   document.getElementById('root')
 );
-
-defineCustomElements();

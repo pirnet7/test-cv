@@ -8,10 +8,22 @@
   },
   "aboutme": {
     "title": "À propos de moi",
-    "langGerman": "Allemand",
-    "langItalian": "Italien",
-    "langEnglish": "Anglais",
-    "langFrench": "Français",
+    "langGerman": {
+      "title": "Allemand",
+      "description": "L'allemand est ma langue maternelle. Elle m'accompagne depuis ma naissance et fait partie intégrante de mon quotidien."
+    },
+    "langItalian": {
+      "title": "Italien",
+      "description": "Je parle italien depuis ma naissance. Cette langue est ma langue maternelle, apprise de mes parents."
+    },
+    "langEnglish": {
+      "title": "Anglais",
+      "description": "Bien que je parle anglais depuis la troisième année, j'aimerais le maîtriser mieux. Bien qu'il fasse partie intégrante de mon quotidien, je travaille à approfondir mes compétences."
+    },
+    "langFrench": {
+      "title": "Français",
+      "description": "Je parle français depuis la quatrième année, soit environ cinq ans maintenant. J'ai appris la langue à l'école."
+    },
     "languageKnowledge": {
       "native": "Langue maternelle",
       "fluent": "Fluent",

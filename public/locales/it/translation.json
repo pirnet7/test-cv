@@ -8,10 +8,22 @@
   },
   "aboutme": {
     "title": "Su di me",
-    "langGerman": "Tedesco",
-    "langItalian": "Italiano",
-    "langEnglish": "Inglese",
-    "langFrench": "Francese",
+    "langGerman": {
+      "title": "Tedesco",
+      "description": "Il tedesco è la mia lingua madre. Mi accompagna dalla nascita ed è parte integrante della mia vita quotidiana."
+    },
+    "langItalian": {
+      "title": "Italiano",
+      "description": "Parlo italiano fin dalla nascita. Questa lingua è la mia lingua madre, appresa dai miei genitori."
+    },
+    "langEnglish": {
+      "title": "Inglese",
+      "description": "Anche se parlo inglese dalla terza elementare, vorrei padroneggiarlo meglio. Anche se fa parte integrante della mia vita quotidiana, sto lavorando per approfondire le mie competenze."
+    },
+    "langFrench": {
+      "title": "Francese",
+      "description": "Parlo francese dalla quarta elementare, quindi circa cinque anni adesso. Ho imparato la lingua a scuola."
+    },
     "languageKnowledge": {
       "native": "Madrelingua",
       "fluent": "Fluente",
