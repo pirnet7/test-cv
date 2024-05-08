@@ -9,7 +9,6 @@ import Skills from "./components/SkillsComponent/SkillsComponent";
 import CommonQuestions from "./components/CommonQuestionsComponent/CommonQuestionsComponent";
 import Divider from "./components/DividerComponent/DividerComponent";
 import Aboutme from "./components/AboutmeComponent/AboutmeComponent";
-import PDFGenerator from "./components/PDFGeneratorComponent/PDFGeneratorComponent";
 
 
 function App() {

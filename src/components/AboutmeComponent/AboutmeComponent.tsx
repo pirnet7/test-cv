@@ -25,11 +25,9 @@ const Aboutme = () => {
     <div className="container ">
       <h2 className="margin-bottom-2 sc-navy">{t("aboutme.title")}</h2>
       <div className="row">
-        <div className="col-sm-12 col-md-8 col-lg-8 d-flex justify-content-between flex-column margin-bottom-2 margin-top-2">
-          <LanguageChart length={90} language={`${t("aboutme.langGerman")}`} chartRef={germanRef} />
-          <LanguageChart length={95} language={`${t("aboutme.langItalian")}`} chartRef={italianRef} />
-          <LanguageChart length={70} language={`${t("aboutme.langEnglish")}`} chartRef={englischRef} />
-          <LanguageChart length={60} language={`${t("aboutme.langFrench")}`} chartRef={frenchRef} />
+        <div className="col-sm-12 col-md-7 col-lg-8 d-flex justify-content-between flex-column margin-bottom-2 margin-top-2">
+
+          <LanguageChart length={50} language={"Deutsch"} color={"iris"} chartRef={germanRef} />
         </div>
 
         <div className="col-sm-12 col-md-4 col-lg-4 margin-bottom-2 margin-top-2 sc-navy">

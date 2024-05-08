@@ -1,6 +1,5 @@
 import React from "react";
 import "./FooterComponent.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -11,7 +10,10 @@ const Footer = () => {
     navigator.clipboard.writeText(email);
 
     document.querySelector("sdx-header").showNotification({
-      description: "Contact Copied To Clipboard!",
+      description: "Email copied to clipboard!",
+      label: "More on Intranet",
+      href: "https://intranet.swisscom.com/home/profile/i:0e.t%7Cazuread%7Ctaavabr1",
+      ariaLabel: "More info about maintenance work",
     });
     this.remove();
   };

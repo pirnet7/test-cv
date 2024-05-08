@@ -25,8 +25,33 @@
   },
   "skills": {
     "title": "Competenze",
-    "skillLanguages": "Lingue",
-    "skillTools": "Strumenti"
+    "langTitle": "Lingue",
+    "toolTitle": "Strumenti",
+    "assessmentTitle": "Valutazione",
+    "experienceTitle": "Esperienza",
+
+    "htmlcss": "HTML/CSS",
+    "js": "JavaScript",
+    "ts": "TypeScript",
+    "mysql": "MySQL",
+    "react": "React.js",
+    "vue": "Vue.js",
+    "docker": "Docker",
+    "bootstrap": "Bootstrap",
+
+    "assessment": {
+      "expert": "Esperto",
+      "advanced": "Avanzato",
+      "beginner": "Principiante"
+    },
+
+    "experiences": {
+      "oneYear": "1 anno",
+      "twoYears": "2 anni",
+      "threeYears": "3 anni",
+      "sixMonths": "6 mesi",
+      "fourMonths": "4 mesi"
+    }
   },
   "projects": {
     "title": "Progetti Visitati",
