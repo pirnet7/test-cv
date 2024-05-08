@@ -9,7 +9,6 @@ import fishing from '../../assets/FishingHobby.jpg';
 
 import { useTranslation } from 'react-i18next';
 
-
 const Aboutme = () => {
   const { t } = useTranslation();
 
