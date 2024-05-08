@@ -1,0 +1,11 @@
+.langKnowledge {
+  font-weight: 500;
+}
+
+.detail-bottom {
+  visibility: hidden;
+}
+
+.bar-chart-horizontal.bar-chart-horizontal--limited {
+  height: 120px;
+}

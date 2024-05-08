@@ -12,6 +12,11 @@
     "langItalian": "Italiano",
     "langEnglish": "Inglese",
     "langFrench": "Francese",
+    "languageKnowledge": {
+      "native": "Madrelingua",
+      "fluent": "Fluente",
+      "beginner": "Principiante"
+    },
     "cardTitle": "Mi chiamo Bruno",
     "cardYears": "17 anni",
     "cardResidence": "Da Zurigo",

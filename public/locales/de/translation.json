@@ -12,6 +12,11 @@
     "langItalian": "Italienisch",
     "langEnglish": "Englisch",
     "langFrench": "Französisch",
+    "languageKnowledge": {
+      "native": "Muttersprache",
+      "fluent": "Fliessend",
+      "beginner": "Anfänger"
+    },
     "cardTitle": "Mein Name ist Bruno",
     "cardYears": "17 Jahre alt",
     "cardResidence": "Aus Zürich",

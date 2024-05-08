@@ -25,10 +25,10 @@ const Aboutme = () => {
       <div className="row">
         <div className="col-sm-12 col-md-7 col-lg-8 d-flex justify-content-between flex-column margin-bottom-2 margin-top-2">
 
-          <LanguageChart length={60} language={`${t("aboutme.langGerman")}`} chartRef={germanRef} />
-          <LanguageChart length={50} language={`${t("aboutme.langItalian")}`} chartRef={italianRef} />
-          <LanguageChart length={50} language={`${t("aboutme.langEnglish")}`} chartRef={englischRef} />
-          <LanguageChart length={50} language={`${t("aboutme.langFrench")}`} chartRef={frenchRef} />
+          <LanguageChart length={60} language={`${t("aboutme.langGerman")}`} langKnowledge={t("aboutme.languageKnowledge.native")} chartRef={germanRef} />
+          <LanguageChart length={50} language={`${t("aboutme.langItalian")}`} langKnowledge={t("aboutme.languageKnowledge.native")} chartRef={italianRef} />
+          <LanguageChart length={50} language={`${t("aboutme.langEnglish")}`} langKnowledge={t("aboutme.languageKnowledge.fluent")} chartRef={englischRef} />
+          <LanguageChart length={50} language={`${t("aboutme.langFrench")}`} langKnowledge={t("aboutme.languageKnowledge.beginner")} chartRef={frenchRef} />
 
         </div>
 

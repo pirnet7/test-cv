@@ -28,22 +28,22 @@ const Skills = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>{t("skills.htmlcss")}</td>
+                    <td className="skillName">{t("skills.htmlcss")}:</td>
                     <td>{t("skills.assessment.expert")}</td>
                     <td>{t("skills.experiences.threeYears")}</td>
                   </tr>
                   <tr>
-                    <td>{t("skills.js")}</td>
+                    <td className="skillName">{t("skills.js")}:</td>
                     <td>{t("skills.assessment.advanced")}</td>
                     <td>{t("skills.experiences.twoYears")}</td>
                   </tr>
                   <tr>
-                    <td>{t("skills.ts")}</td>
+                    <td className="skillName">{t("skills.ts")}:</td>
                     <td>{t("skills.assessment.beginner")}</td>
                     <td>{t("skills.experiences.fourMonths")}</td>
                   </tr>
                   <tr>
-                    <td>{t("skills.mysql")}</td>
+                    <td className="skillName">{t("skills.mysql")}:</td>
                     <td>{t("skills.assessment.advanced")}</td>
                     <td>{t("skills.experiences.twoYears")}</td>
                   </tr>
@@ -69,22 +69,22 @@ const Skills = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>{t("skills.vue")}</td>
+                    <td className="skillName">{t("skills.vue")}:</td>
                     <td>{t("skills.assessment.beginner")}</td>
                     <td>{t("skills.experiences.fourMonths")}</td>
                   </tr>
                   <tr>
-                    <td>{t("skills.react")}</td>
+                    <td className="skillName">{t("skills.react")}:</td>
                     <td>{t("skills.assessment.advanced")}</td>
                     <td>{t("skills.experiences.sixMonths")}</td>
                   </tr>
                   <tr>
-                    <td>{t("skills.docker")}</td>
+                    <td className="skillName">{t("skills.docker")}:</td>
                     <td>{t("skills.assessment.expert")}</td>
                     <td>{t("skills.experiences.twoYears")}</td>
                   </tr>
                   <tr>
-                    <td>{t("skills.bootstrap")}</td>
+                    <td className="skillName">{t("skills.bootstrap")}:</td>
                     <td>{t("skills.assessment.expert")}</td>
                     <td>{t("skills.experiences.twoYears")}</td>
                   </tr>
