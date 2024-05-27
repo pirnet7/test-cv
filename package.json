@@ -1,4 +1,5 @@
 {
+  "homepage": "https://pirnet7.github.io/sdx-cv",
   "name": "sdx-react-example",
   "version": "0.1.0",
   "private": true,
@@ -33,6 +34,8 @@
     "react-scripts": "^5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
