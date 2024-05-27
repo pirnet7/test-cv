@@ -1,5 +1,5 @@
 import { saveAs } from "file-saver";
-import examplePdf from "./cv.pdf"; // Dein vordefiniertes PDF
+import examplePdf from "./cv.pdf";
 
 const PDFGenerator = () => {
   const downloadPDF = () => {
