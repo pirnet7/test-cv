@@ -11,7 +11,7 @@ i18n
     debug: true,
     fallbackLng: "en",
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json", // Anpassen des Pfads entsprechend deiner Ordnerstruktur im öffentlichen Ordner
+      loadPath: "/locales/{{lng}}.json",
     },
   });
 
