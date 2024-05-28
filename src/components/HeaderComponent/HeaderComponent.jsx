@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./HeaderComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const { t } = useTranslation();
   const [text, setText] = useState("");
   const [forward, setForward] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);

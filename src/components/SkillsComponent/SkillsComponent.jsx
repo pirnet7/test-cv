@@ -1,10 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SkillsComponent.css";
-import { useTranslation } from "react-i18next";
 
 const Skills = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="container">
       <h2 className="margin-bottom-3 sc-navy text-center">Skills</h2>
