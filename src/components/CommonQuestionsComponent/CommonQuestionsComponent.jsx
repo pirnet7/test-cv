@@ -1,14 +1,9 @@
 import "./CommonQuestions.css";
-import { useTranslation } from "react-i18next";
 
 const CommonQuestions = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="container commonQuestions">
-      <h2 className="margin-bottom-3 sc-navy text-center">
-        {t("commonquestions.title")}
-      </h2>
+      <h2 className="margin-bottom-3 sc-navy text-center">Common Questions</h2>
 
       <div className="row d-flex justify-content-center">
         <div className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
@@ -21,7 +16,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  {t("commonquestions.question1.question")}
+                  How was your first day as an apprentice?
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -30,7 +25,9 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  {t("commonquestions.question1.answer")}
+                  My first day as an apprentice was exciting and somewhat
+                  overwhelming, but I was also curious and ready to learn
+                  everything that came my way.
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>
@@ -42,7 +39,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  {t("commonquestions.question2.question")}
+                  What inspired you to choose this apprenticeship?
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -51,7 +48,9 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  {t("commonquestions.question2.answer")}
+                  The prospect of learning practical skills and making a direct
+                  contribution to an area that has always interested me inspired
+                  me to choose this apprenticeship.
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>
@@ -63,7 +62,7 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  {t("commonquestions.question3.question")}
+                  How have you evolved during the apprenticeship?
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -72,7 +71,9 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  {t("commonquestions.question3.answer")}
+                  During my apprenticeship, I greatly improved my skills in
+                  teamwork and problem-solving, which helped me become more
+                  professionally confident.
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>
@@ -84,7 +85,8 @@ const CommonQuestions = () => {
                   role="heading"
                   aria-level="2"
                 >
-                  {t("commonquestions.question4.question")}
+                  What advice would you give to others starting a similar
+                  apprenticeship?
                 </span>
               </sdx-accordion-item-header>
               <sdx-accordion-item-body>
@@ -93,7 +95,9 @@ const CommonQuestions = () => {
                   className="text-recommended-max-width"
                   role="region"
                 >
-                  {t("commonquestions.question4.answer")}
+                  My advice to others starting a similar apprenticeship would be
+                  to be open to new experiences and actively seek opportunities
+                  for personal and professional growth.
                 </p>
               </sdx-accordion-item-body>
             </sdx-accordion-item>

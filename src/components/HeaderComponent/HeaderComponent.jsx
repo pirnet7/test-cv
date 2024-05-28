@@ -9,7 +9,7 @@ const Header = () => {
   const [forward, setForward] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   useEffect(() => {
-    const targetTexts = [" Bruno", `${t("main.subTitle.profession")}`];
+    const targetTexts = [" Bruno", "a developer"];
 
     const typeText = () => {
       const currentTarget = targetTexts[currentIndex];
@@ -40,11 +40,8 @@ const Header = () => {
     <div className="container header-container">
       <div className="header d-flex flex-column align-items-center justify-content-around margin-bottom-2">
         <div>
-          <h1 className="text-light text-center">{t("main.title")}</h1>
-          <h2 className="text-light text-center">
-            {t("main.subTitle.iam")}
-            {text}
-          </h2>
+          <h1 className="text-light text-center">CV Website with SDX</h1>
+          <h2 className="text-light text-center">I'm {text}</h2>
         </div>
       </div>
     </div>

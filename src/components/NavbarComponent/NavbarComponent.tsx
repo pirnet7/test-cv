@@ -1,18 +1,11 @@
 import { useEffect } from "react";
 import "./NavbarComponent.css";
-import { useTranslation } from 'react-i18next';
+import CopyToClipboard from "../CopyToClipboardComponent/CopyToClipboardComponent";
 import PDFGenerator from "../PDFGeneratorComponent/PDFGeneratorComponent";
 
-const locales = {
-  en: { title: 'English' },
-  de: { title: 'Deutsch' },
-  it: { title: 'Italienisch' },
-  fr: { title: 'Français' }
-};
+
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation();
-
 
   return (
     <>
@@ -30,9 +23,15 @@ const Navbar = () => {
           "href": "javascript:;"      
         },
         {
-          "label": "Language",
-          "iconName": "icon-network",
-          "slot": "language",
+          "label": "Feedback",
+          "iconName": "icon-thumb-up",
+          "slot": "feedback",
+          "scrollable": true
+        }, 
+        {
+          "label": "Contact",
+          "iconName": "icon-e-mail",
+          "slot": "contact",
           "scrollable": true
         }
         
@@ -56,30 +55,30 @@ const Navbar = () => {
       >
         <div slot="download">
           <div className="d-flex align-items-center">
-            <div className="downloadLink">
+            <div className="item">
               <PDFGenerator />
             </div>
           </div>
         </div>
 
-        <div slot="language" className="container">
-          <div className="row">
-            <div className="col-10 padding-bottom-4">
-              <sdx-input-group placeholder="Choose your language">
-                {Object.keys(locales).map((locale) => (
-                  <div className="row">
-                    <div className="col m-2">
-                      <sdx-input-item key={locale} onClick={() => i18n.changeLanguage(locale)}>
-                        {locales[locale as keyof typeof locales].title}
-                      </sdx-input-item>
-                    </div>
-                  </div>
-                ))}
-
-              </sdx-input-group>
+        <div slot="feedback">
+          <div className="d-flex align-items-center">
+            <div className="item">
+              <a href="https://forms.office.com/e/nn3WdKBhNL"
+                target="_blank"
+                className="nav-link">Give a feedback!</a>
             </div>
           </div>
         </div>
+
+        <div slot="contact">
+          <div className="d-flex align-items-center">
+            <div className="item">
+              <CopyToClipboard />
+            </div>
+          </div>
+        </div>
+
       </sdx-header>
     </>
   );

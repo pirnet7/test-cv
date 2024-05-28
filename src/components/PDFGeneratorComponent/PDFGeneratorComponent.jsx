@@ -1,5 +1,5 @@
 import { saveAs } from "file-saver";
-import examplePdf from "./cv.pdf";
+import examplePdf from "./CV-Bruno.pdf";
 
 const PDFGenerator = () => {
   const downloadPDF = () => {
@@ -15,7 +15,9 @@ const PDFGenerator = () => {
 
   return (
     <>
-      <a onClick={downloadPDF}>Download PDF</a>
+      <a onClick={downloadPDF} className="nav-link">
+        Download PDF
+      </a>
     </>
   );
 };

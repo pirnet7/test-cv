@@ -1,0 +1,11 @@
+.copyButton {
+  background-color: #d6d6d6;
+  padding: 6px;
+  border-radius: 8px 0px 0px 8px;
+  border: none;
+  cursor: pointer;
+}
+.copyText {
+  background-color: #eaeaeabf;
+  padding: 6px;
+}

@@ -1,0 +1,106 @@
+{
+  "main": {
+    "title": "CV Website with SDX",
+    "subTitle": {
+      "iam": "I'm",
+      "profession": " a developer"
+    }
+  },
+  "aboutme": {
+    "title": "About Me",
+    "langGerman": {
+      "title": "German",
+      "description": "German is my mother tongue. It has accompanied me throughout my life since birth and is an integral part of my everyday life."
+    },
+    "langItalian": {
+      "title": "Italian",
+      "description": "I have been speaking Italian since birth. This language is my mother tongue, learned from my parents."
+    },
+    "langEnglish": {
+      "title": "English",
+      "description": "Although I have been speaking English since the third grade, I would like to master it better. While it is a solid part of my everyday life, I am working on deepening my skills."
+    },
+    "langFrench": {
+      "title": "French",
+      "description": "I have been speaking French since the fourth grade, which is about five years now. I learned the language in school."
+    },
+    "languageKnowledge": {
+      "native": "Native language",
+      "fluent": "Fluent",
+      "beginner": "Beginner"
+    },
+    "cardTitle": "My name is Bruno",
+    "cardYears": "17 years old",
+    "cardResidence": "From Zurich",
+    "cardHobbys": "My hobbies:",
+    "cardCampingTitle": "Camping",
+    "cardCampingDescription": "In the midst of nature, under the starry sky.",
+    "cardSportsTitle": "Sports",
+    "cardSportsDescription": "Intense sports, team spirit, and pure adrenaline.",
+    "cardFishingTitle": "Fishing",
+    "cardFishingDescription": "Peace by the water when the fish are biting."
+  },
+  "skills": {
+    "title": "Skills",
+    "langTitle": "Languages",
+    "toolTitle": "Tools",
+    "assessmentTitle": "Assessment",
+    "experienceTitle": "Experience",
+
+    "htmlcss": "HTML/CSS",
+    "js": "JavaScript",
+    "ts": "TypeScript",
+    "mysql": "MySQL",
+    "react": "React.js",
+    "vue": "Vue.js",
+    "docker": "Docker",
+    "bootstrap": "Bootstrap",
+
+    "assessment": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "beginner": "Beginner"
+    },
+
+    "experiences": {
+      "oneYear": "1 year",
+      "twoYears": "2 years",
+      "threeYears": "3 years",
+      "sixMonths": "6 months",
+      "fourMonths": "4 months"
+    }
+  },
+  "projects": {
+    "title": "Visited Projects",
+    "date": "Date",
+    "skills": "Skills",
+    "developement": "Development",
+    "description": "Description",
+    "onboardingProject": "During a three-month onboarding program, you will acquire important skills for working on various projects in different teams at Swisscom.",
+    "datalakeProject": "Get to know big data platforms (Hadoop, Kubernetes) and deploy container images. Apply your knowledge by enhancing Spark images and automating CI/CD.",
+    "nexCCProject": "NexCC, the competence center within NEX, develops and maintains key applications for the entire company and provides comprehensive software and hardware support.",
+    "appsTeamProject": "We are a young team passionate about designing and developing high-quality web applications."
+  },
+  "commonquestions": {
+    "title": "Common Questions",
+    "question1": {
+      "question": "How was your first day as an apprentice?",
+      "answer": "My first day as an apprentice was exciting and somewhat overwhelming, but I was also curious and ready to learn everything that came my way."
+    },
+    "question2": {
+      "question": "What inspired you to choose this apprenticeship?",
+      "answer": "The prospect of learning practical skills and making a direct contribution to an area that has always interested me inspired me to choose this apprenticeship."
+    },
+    "question3": {
+      "question": "How have you evolved during the apprenticeship?",
+      "answer": "During my apprenticeship, I greatly improved my skills in teamwork and problem-solving, which helped me become more professionally confident."
+    },
+    "question4": {
+      "question": "What advice would you give to others starting a similar apprenticeship?",
+      "answer": "My advice to others starting a similar apprenticeship would be to be open to new experiences and actively seek opportunities for personal and professional growth."
+    }
+  },
+  "footer": {
+    "contact": "Contact"
+  }
+}
