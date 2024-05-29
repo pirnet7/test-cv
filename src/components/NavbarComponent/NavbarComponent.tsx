@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./NavbarComponent.css";
 import CopyToClipboard from "../CopyToClipboardComponent/CopyToClipboardComponent";
 import PDFGenerator from "../PDFGeneratorComponent/PDFGeneratorComponent";
@@ -47,7 +46,7 @@ const Navbar = () => {
             {
               "iconName": "icon-linkedin",
               "label": "LinkedIn",
-              "href": "https://www.linkedin.com/in/bruno-varrese-70449a25a/"
+              "href": "https://www.linkedin.com/in/bruno-varrese-2a8939248/"
             }
           ]
         }

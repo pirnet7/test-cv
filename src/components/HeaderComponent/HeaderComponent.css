@@ -23,3 +23,8 @@
   font-size: 18px;
   color: #666;
 }
+
+.sticker {
+  bottom: -40px;
+  right: 10px;
+}

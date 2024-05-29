@@ -38,7 +38,7 @@ const Aboutme = () => {
               </div>
 
             </div>
-            <sdx-content-slider lg={1} xl={1} ul={1} sr-hint="My three slides">
+            <sdx-content-slider sm={1} xl={1} ul={1} sr-hint="My three slides">
               <Hobby img={camping} imgAlt={"Image of camping hobby"} title="camping" description="In the midst of nature, under the starry sky." />
               <Hobby img={sports} imgAlt={"Image of sports hobby"} title="Sports" description="Intense sports, team spirit, and pure adrenaline." />
               <Hobby img={fishing} imgAlt={"Image of fishing hobby"} title="Fishing" description="Peace by the water when the fish are biting." />

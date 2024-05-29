@@ -10,7 +10,7 @@ const Projects = () => {
     <div className="container">
       <h2 className="margin-bottom-3 sc-navy">Visited Projects</h2>
 
-      <sdx-content-slider xl={xlValue} ul={ulValue} centered-slide="3">
+      <sdx-content-slider xl={xlValue} ul={ulValue} centered-slide="1">
         <Project
           title="Apps Team"
           date="12.02.24 - 02.08.24"
