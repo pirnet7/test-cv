@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import "./ProjectComponent.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
