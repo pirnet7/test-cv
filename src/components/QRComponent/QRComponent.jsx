@@ -5,7 +5,7 @@ import intranetQR from "../../assets/intranetQR.png";
 
 const QRCode = () => {
   return (
-    <div className="container">
+    <div className="container qrContainer">
       <h2 className="margin-bottom-3 sc-navy text-center">QR Codes</h2>
 
       <div class="row row--gutters d-flex justify-content-center">

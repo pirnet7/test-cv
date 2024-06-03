@@ -9,6 +9,7 @@ import CommonQuestions from "./components/CommonQuestionsComponent/CommonQuestio
 import Divider from "./components/DividerComponent/DividerComponent";
 import Aboutme from "./components/AboutmeComponent/AboutmeComponent";
 import QRCode from "./components/QRComponent/QRComponent";
+import Footer from "./components/FooterComponent/FooterComponent";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <CommonQuestions />
       <Divider />
       <QRCode />
+      <Footer />
     </div>
   );
 }
