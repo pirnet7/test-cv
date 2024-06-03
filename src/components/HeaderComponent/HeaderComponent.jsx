@@ -35,13 +35,24 @@ const Header = () => {
   }, [text, forward, currentIndex]);
 
   return (
-    <div className="container header-container">
-      <div className="header d-flex flex-column align-items-center justify-content-around margin-bottom-2">
-        <div>
-          <h1 className="text-light text-center">CV Website with SDX</h1>
-          <h2 className="text-light text-center">I'm {text}</h2>
+    <div className="container mt-4">
+      <sdx-content-slider
+        lg="1"
+        xl="1"
+        ul="1"
+        sr-hint="My three slides"
+        className="slider"
+      >
+        <div className="image--frame-light firstSlide d-flex align-items-center justify-content-center rounded">
+          <h1 className="text-center">CV Website With SDX</h1>
+          <h1 className="text-center">I'm {text}</h1>
         </div>
-      </div>
+
+        <div className="image--frame-light secondSlide d-flex align-items-center justify-content-center">
+          <h1 className="text-center">These Are My Favorite</h1>
+          <h1 className="text-center">Activities</h1>
+        </div>
+      </sdx-content-slider>
     </div>
   );
 };
