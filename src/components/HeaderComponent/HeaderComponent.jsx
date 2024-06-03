@@ -57,7 +57,7 @@ const Header = () => {
         className="slider"
       >
         <div className="image--frame-light firstSlide d-flex align-items-center justify-content-center">
-          <h1 className="text-center">CV Website With SDX</h1>
+          <h1 className="text-center">CV Website With SDX!</h1>
           <h1 className="text-center">I'm {text}</h1>
         </div>
 
