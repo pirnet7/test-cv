@@ -7,7 +7,7 @@ const CommonQuestions = () => {
 
       <div className="row d-flex justify-content-center">
         <div className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
-          <sdx-accordion keep-open="false">
+          <sdx-accordion>
             <sdx-accordion-item open>
               <sdx-accordion-item-header>
                 <span
