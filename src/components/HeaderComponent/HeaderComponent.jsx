@@ -9,7 +9,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const targetTexts = [" Bruno", "a developer"];
+    const targetTexts = [" Bruno", "A Developer"];
 
     const typeText = () => {
       const currentTarget = targetTexts[currentIndex];
