@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pirnet7.github.io/test-cv",
-  "name": "sdx-react-example",
+  "homepage": "https://pirnet7.github.io/CV",
+  "name": "test-cv",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
